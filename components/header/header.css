@@ -1,0 +1,13 @@
+.header {
+    padding: 63px 160px 44px;
+
+    background-color: var(--white);
+}
+
+.header__title {
+    font-family: 'Iter', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 64px;
+    color: var(--black);
+}
