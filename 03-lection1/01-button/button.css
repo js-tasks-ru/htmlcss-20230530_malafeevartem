@@ -3,15 +3,16 @@
     min-width: 189px;
     min-height: 48px;
 
-    padding: 15px 15px 14px;
+    padding: 0 15px;
 
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    text-align: center;
 
     border: 0;
     border-radius: 8px;
 
-    transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
+    transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out, border-color 200ms ease-in-out;
 
     cursor: pointer;
 }
@@ -29,21 +30,22 @@
 }
 
 .button_alternate {
+    color: var(--grey-4);
+
     border: 1px solid var(--grey-3);
     background-color: var(--white);
 }
 
-.button_primary:hover:not([disabled]) {
+.button_primary:hover {
     background-color: var(--dark-blue);
 }
 
-.button_secondary:hover:not([disabled]) {
+.button_secondary:hover {
     background-color: var(--dark-purple);
 }
 
-.button_alternate:hover:not([disabled]) {
-    border: 1px solid var(--black);
-    background-color: var(--white);
+.button_alternate:hover {
+    border-color: var(--black);
 }
 
 .button:disabled {
