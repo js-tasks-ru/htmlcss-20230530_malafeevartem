@@ -1,8 +1,7 @@
 /* Стилизация аккордеона */
 .accordion__item {
-    box-sizing: border-box;
     margin-bottom: 8px;
-    padding: 23px 32px;
+    padding: 24px 32px;
 
     border: 1px solid var(--grey-3);
     border-radius: 8px;
@@ -26,7 +25,7 @@
 }
 
 .accordion__content {
-    margin-bottom: 8px;
+    padding: 16px 0 8px;
 
     font-family: 'Inter', sans-serif;
     line-height: 24px;
