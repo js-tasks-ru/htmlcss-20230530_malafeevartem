@@ -16,7 +16,6 @@
 .histogram__header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
 }
 
 .histogram__information {
@@ -40,6 +39,8 @@
 }
 
 .histogram__link {
+    padding-top: 3px;
+
     color: var(--blue);
 
     text-decoration: none;
@@ -49,13 +50,13 @@
     display: flex;
     align-items: flex-end;
     column-gap: 1px;
-    
 
     height: 50px;
 }
 
 .histogram__column {
     flex-grow: 1;
+
     height: 100%;
 
     background-color: var(--blue);
@@ -69,6 +70,6 @@
     height: 50%;
 }
 
-.histogram__column_s {
+.histogram__column_l {
     height: 70%;
 }
