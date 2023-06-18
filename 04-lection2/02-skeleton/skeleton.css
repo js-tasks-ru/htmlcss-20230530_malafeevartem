@@ -1,0 +1,52 @@
+.skeleton {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    padding: 32px 40px 32px 24px;
+
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+}
+
+.skeleton__logo {
+    width: 64px;
+    height: 64px;
+
+    background-color: var(--grey-2);
+    border-radius: 50%;
+}
+
+.skeleton__line {
+    height: 20px;
+
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+}
+
+.skeleton__line_s {
+    width: 20%;
+}
+
+.skeleton__line_m {
+    width: 30%;
+}
+
+.skeleton__top {
+    display: flex;
+    column-gap: 16px;
+}
+
+.skeleton__description {
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    row-gap: 8px;
+}
+
+.skeleton__bottom {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
