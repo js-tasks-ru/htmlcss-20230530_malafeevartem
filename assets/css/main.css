@@ -2,8 +2,10 @@
 @import './normalize.css';
 @import '../../components/page/page.css';
 @import '../../components/header/header.css';
-@import '../../components/main/main.css';
+@import '../../components/preview/preview.css';
 @import '../../components/footer/footer.css';
+@import '../../components/container/constainer.css';
+@import '../../components/card/card.css';
 
 :root {
     --white: #ffffff;
@@ -26,8 +28,10 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --shadow: var(--black);
 }
 
-* {
-    font-family: 'Inter', sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
 }
