@@ -2,32 +2,24 @@
     position: relative;
 
     display: inline-block;
-    width: 129px;
-    height: 77px;
 
     line-height: 0;
 }
 
 
 .tooltip__icon {
-    position: relative;
-    left: 50%;
-    top: 100%;
-    transform: translate(-50%, -100%);
     z-index: 1;
-
-    display: inline-block;
 
     cursor: pointer;
 }
 
 .tooltip__bubble {
     position: absolute;
-    bottom: 100%;
-    transform: translateY(100%);
+    bottom: calc(100% + 8px);
+    right: 50%;
+    transform: translateX(50%);
 
     display: none;
-
     padding: 13px 21px 8px;
 
     line-height: 24px;
@@ -46,7 +38,7 @@
     right: 50%;
     transform: translateX(50%);
 
-    border: 10px solid transparent;
+    border: 7px solid transparent;
     border-top: 6px solid var(--primary);
 
     content: "";
