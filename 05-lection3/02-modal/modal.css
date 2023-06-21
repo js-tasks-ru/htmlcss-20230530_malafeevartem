@@ -7,7 +7,7 @@
 
     display: none;
 
-    background-color: #C4C4C4;
+    background-color: rgba(196, 196, 196, 1);
 }
 
 .modal__inner {
