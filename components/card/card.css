@@ -50,6 +50,13 @@
         padding: 32px;
     }
 
+    .card__title {
+        font-family: Roboto;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 25px;
+    }
+
     .card__title::before {
         display: none;
     }
