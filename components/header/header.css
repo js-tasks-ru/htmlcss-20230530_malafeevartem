@@ -1,13 +1,44 @@
 .header {
-    padding: 63px 160px 44px;
+    padding: 16px 0 69px;
 
+    font-family: 'Iter', sans-serif;
+    
     background-color: var(--white);
 }
 
+.header__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+
 .header__title {
-    font-family: 'Iter', sans-serif;
-    font-size: 50px;
-    font-weight: 500;
-    line-height: 64px;
-    color: var(--black);
+    margin: 0;
+
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 400;
+    color: var(--grey-4);
+}
+
+.header__logo {
+    align-self: center;
+}
+
+
+@media (min-width: 768px) {
+    .header {
+        padding: 24px 0 77px;
+    }
+
+    .header__logo {
+        align-self: self-start;
+    }
+
+    .header__title {
+        font-size: 50px;
+        line-height: 64px;
+        font-weight: 500;
+        color: var(--black);
+    }
 }

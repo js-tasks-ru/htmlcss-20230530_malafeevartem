@@ -2,8 +2,9 @@
 @import './normalize.css';
 @import '../../components/page/page.css';
 @import '../../components/header/header.css';
-@import '../../components/preview/preview.css';
+@import '../../components/main/main.css';
 @import '../../components/footer/footer.css';
+@import '../../components/preview/preview.css';
 @import '../../components/container/constainer.css';
 @import '../../components/card/card.css';
 
@@ -31,6 +32,10 @@
     --secondary: var(--purple);
 
     --shadow: var(--black);
+
+    --phone_width: 320px;
+    --tablet-width: 768px;
+    --desktop-width: 1110px;
 }
 
 body {

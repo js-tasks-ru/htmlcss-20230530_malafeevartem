@@ -7,90 +7,66 @@
     </head>
     <body>
         <div class="page">
-            <header class="header">
+            <header class="page__header header">
                 <div class="container">
-                    <h1 class="header__title">Reusable component library</h1>
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_90689_201)">
+                                <rect y="1" width="30" height="30" fill="#212429"/>
+                                <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                                <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_90689_201">
+                                <rect width="110" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>   
+                        </div>                     
+                        <h1 class="header__title">Reusable component library</h1>
+                    </div>
                 </div>
             </header>
-            <main class="preview">
-                <div class="container">
-                    <div class="preview__cards">
-                        <div class="preview__card card">
-                            <img class="card__preview" width="300" height="157" alt="Tooltip image">
-                            <h3 class="card__title">Tooltip</h3>
-                        </div>
-                        <div class="preview__card card">
-                            <img class="card__preview" width="300" height="157" alt="Custom form elements image">
-                            <h3 class="card__title">Custom form elements</h3>
-                        </div>
-                        <div class="preview__card card">
-                            <img class="card__preview" width="300" height="157" alt="Calendar image">
-                            <h3 class="card__title">Calendar</h3>
-                        </div>
-                        <div class="preview__card card">
-                            <img class="card__preview" width="300" height="157" alt="Modal dialog image">
-                            <h3 class="card__title">Modal dialog</h3>
-                        </div>
-                        <div class="preview__card card">
-                            <div class="histogram">
-                                <div class="histogram__header">
-                                    <div class="histogram__information">
-                                        <h2 class="histogram__title">Total orders</h2>
-                                        <div class="histogram__total">50254</div>
-                                    </div>
-                                    <a class="histogram__link" href="#">View all</a>
-                                </div>
-                                <div class="histogram__chart">
-                                    <div class="histogram__column histogram__column_s"></div>
-                                    <div class="histogram__column histogram__column_m"></div>
-                                    <div class="histogram__column histogram__column_l"></div>
-                                    <div class="histogram__column histogram__column_s"></div>
-                                    <div class="histogram__column histogram__column_s"></div>
-                                    <div class="histogram__column histogram__column_l"></div>
-                                    <div class="histogram__column histogram__column_s"></div>
-                                    <div class="histogram__column histogram__column_m"></div>
-                                    <div class="histogram__column histogram__column_l"></div>
-                                    <div class="histogram__column histogram__column_s"></div>
-                                    <div class="histogram__column histogram__column_s"></div>
-                                    <div class="histogram__column histogram__column_l"></div>
-                                    <div class="histogram__column histogram__column_s"></div>
-                                    <div class="histogram__column histogram__column_m"></div>
-                                    <div class="histogram__column histogram__column_l"></div>
-                                    <div class="histogram__column histogram__column_s"></div>
-                                    <div class="histogram__column histogram__column_s"></div>
-                                    <div class="histogram__column histogram__column_l"></div>
-                                    <div class="histogram__column histogram__column_s"></div>
-                                    <div class="histogram__column histogram__column_m"></div>
-                                    <div class="histogram__column histogram__column_l"></div>
-                                    <div class="histogram__column histogram__column_s"></div>
-                                    <div class="histogram__column histogram__column_s"></div>
-                                    <div class="histogram__column histogram__column_l"></div>
-                                    <div class="histogram__column histogram__column_s"></div>
-                                    <div class="histogram__column histogram__column_m"></div>
-                                    <div class="histogram__column histogram__column_l"></div>
-                                    <div class="histogram__column histogram__column_s"></div>
-                                    <div class="histogram__column histogram__column_s"></div>
-                                    <div class="histogram__column histogram__column_l"></div>
-                                </div>
+            <main class="page__main main">
+                <div class="preview">
+                    <div class="container">
+                        <div class="preview__cards">
+                            <div class="preview__card card">
+                                <div class="card__component"></div>
+                                <h3 class="card__title">Tooltip</h3>
                             </div>
-                            <h3 class="card__title">Histogram</h3>
-                        </div>
-                        <div class="preview__card card">
-                            <img class="card__preview" width="300" height="157" alt="Avatar image">
-                            <h3 class="card__title">Avatar</h3>
+                            <div class="preview__card card">
+                                <div class="card__component"></div>
+                                <h3 class="card__title">Calendar</h3>
+                            </div>
+                            <div class="preview__card card">
+                                <div class="card__component"></div>
+                                <h3 class="card__title">Modal dialog</h3>
+                            </div>
+                            <div class="preview__card card">
+                                <div class="card__component"></div>
+                                <h3 class="card__title">Histogram</h3>
+                            </div>
+                            <div class="preview__card card">
+                                <div class="card__component"></div>
+                                <h3 class="card__title">Avatar</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </main>
-            <footer class="footer">
+            <footer class="page__footer footer">
                 <div class="container">
-                    <h2 class="footer__title">About</h2>
-                    <p class="footer__content">
-                        This project is a collection of professionally designed, pre-built,
-                        fully responsive HTML snippets you can drop into your projects.
-                        Get started by checking out our free preview components,
-                        or browsing the PNG previews in the categories you're most curious about.
-                    </p>
+                    <div class="footer__inner">
+                        <h2 class="footer__title">About</h2>
+                        <p class="footer__content">
+                            This project is a collection of professionally designed, pre-built,
+                            fully responsive HTML snippets you can drop into your projects.
+                            Get started by checking out our free preview components,
+                            or browsing the PNG previews in the categories you're most curious about.
+                        </p>
+                    </div>
                 </div>
             </footer>
         </div>
