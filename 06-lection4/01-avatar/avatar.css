@@ -8,3 +8,18 @@
 
     object-fit: cover;
 }
+
+.avatar {
+    width: 116px;
+    height: 116px;
+}
+
+.avatar__sm {
+    width: 102px;
+    height: 102px;
+}
+
+.avatar__lg {
+    width: 160px;
+    height: 160px;
+}
