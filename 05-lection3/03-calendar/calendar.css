@@ -63,18 +63,19 @@
     color: #90A0B7;
 }
 
-
-.calendar_sm {
-    row-gap: 18px;
-
-    padding: 0;
-    border: 0;
-}
-
-.calendar__title_sm {
-    font-size: 16px;
-}
-
-.calendar__cell_sm {
-    font-size: 10px;
+@media (max-width: 768px) {
+    .calendar_sm {
+        row-gap: 18px;
+    
+        padding: 0;
+        border: 0;
+    }
+    
+    .calendar__title_sm {
+        font-size: 16px;
+    }
+    
+    .calendar__cell_sm {
+        font-size: 10px;
+    }
 }
