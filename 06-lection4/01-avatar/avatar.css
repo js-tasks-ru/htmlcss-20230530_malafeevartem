@@ -9,17 +9,17 @@
     object-fit: cover;
 }
 
-.avatar {
+.avatar_md {
     width: 116px;
     height: 116px;
 }
 
-.avatar__sm {
+.avatar_sm {
     width: 102px;
     height: 102px;
 }
 
-.avatar__lg {
+.avatar_lg {
     width: 160px;
     height: 160px;
 }
