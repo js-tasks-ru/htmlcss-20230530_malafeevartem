@@ -6,11 +6,16 @@
     line-height: 0;
 }
 
-
 .tooltip__icon {
     z-index: 1;
 
     cursor: pointer;
+}
+
+.tooltip__question {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
 }
 
 .tooltip__bubble {
