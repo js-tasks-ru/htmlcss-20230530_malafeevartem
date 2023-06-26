@@ -39,6 +39,14 @@
     cursor: pointer;
 }
 
+.modal__cross {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+
+    color: var(--grey-4);
+}
+
 .modal__title {
     margin: 0;
 
