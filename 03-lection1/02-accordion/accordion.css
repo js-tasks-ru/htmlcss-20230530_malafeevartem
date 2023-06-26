@@ -40,6 +40,8 @@
     display: inline-block;
     width: 26px;
     height: 26px;
+
+    color: var(--grey-4);
 }
 
 .accordion__item[open] .accordion__logo {
