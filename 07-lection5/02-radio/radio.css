@@ -80,6 +80,10 @@
     color: var(--grey-2);
 }
 
+.radio__input:disabled ~ .radio__state {
+    pointer-events: none;
+}
+
 .radio__input:focus ~ .radio__state .radio__label {
     text-decoration: underline;
 }
