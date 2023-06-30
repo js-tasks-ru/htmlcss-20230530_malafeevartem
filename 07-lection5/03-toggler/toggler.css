@@ -1,0 +1,86 @@
+.toggler {
+    position: relative;
+
+    display: inline-block;
+
+    font-family: 'Inter', sans-serif;
+
+    box-sizing: border-box;
+}
+
+.toggler__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.toggler__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    cursor: pointer;
+}
+
+.toggler__control {
+    position: relative;
+
+    width: 52px;
+    height: 28px;
+
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+
+    box-sizing: border-box;
+}
+
+.toggler__control::before {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+
+    width: 24px;
+    height: 24px;
+
+    background-color: var(--grey-2);
+    border-radius: 50%;
+
+    content: "";
+}
+
+.toggler__label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: var(--grey-4);
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__control {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__control::before {
+    left: initial;
+    right: 1px;
+
+    background-color: var(--white);
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__control {
+    background-color: var(--grey-2);
+    border-color: var(--grey-2);
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__control::before {
+    background-color: var(--grey-3);
+}
+
+.toggler__input:focus ~ .toggler__state {
+    pointer-events: none;
+}
+
+.toggler__input:focus ~ .toggler__state .toggler__label {
+    text-decoration: underline;
+}
