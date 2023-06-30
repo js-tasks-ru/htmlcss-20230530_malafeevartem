@@ -1,0 +1,18 @@
+.page {
+    display: grid;
+    grid-template-areas: 'header'
+                         'main'
+                         'footer';
+}
+
+.page__header {
+    grid-area: header;
+}
+
+.page__main {
+    grid-area: main;
+}
+
+.page__footer {
+    grid-area: footer;
+}
