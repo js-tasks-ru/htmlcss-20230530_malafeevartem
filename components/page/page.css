@@ -3,6 +3,9 @@
     grid-template-areas: 'header'
                          'main'
                          'footer';
+    grid-template-rows: auto 1fr auto;
+
+    background-color: var(--grey-5);
 }
 
 .page__header {
