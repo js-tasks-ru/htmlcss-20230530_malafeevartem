@@ -7,6 +7,10 @@
 @import '../../components/preview/preview.css';
 @import '../../components/container/constainer.css';
 @import '../../components/card/card.css';
+@import '../../components/sidebar/sidebar.css';
+@import '../../components/components/components.css';
+@import '../../components/component/component.css';
+
 
 :root {
     --white: #ffffff;
@@ -32,6 +36,7 @@
     --secondary: var(--purple);
 
     --shadow: var(--black);
+    --active: #D84910;
 
     --phone_width: 320px;
     --tablet-width: 768px;
@@ -39,5 +44,7 @@
 }
 
 body {
+    height: 100vh;
+
     font-family: 'Roboto', sans-serif;
 }
