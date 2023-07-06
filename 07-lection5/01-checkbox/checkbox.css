@@ -45,6 +45,8 @@
 
 .checkbox__icon {
     display: none;
+    width: 15px;
+    height: 13px;
 
     color: var(--white);
 }
@@ -56,9 +58,6 @@
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
     display: block;
-
-    width: 15px;
-    height: 13px;
 }
 
 .checkbox__input:focus ~ .checkbox__state .checkbox__label {
