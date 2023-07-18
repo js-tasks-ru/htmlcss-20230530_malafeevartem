@@ -1,0 +1,56 @@
+.tabs {
+    display: grid;
+
+    position: relative;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.tabs__radio {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.tabs__scroller {
+    display: flex;
+    column-gap: 24px;
+
+    overflow: auto;
+
+    box-sizing: border-box;
+}
+
+.tabs__content {
+    padding: 24px 0;
+    background-color: var(--grey-5);
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--grey-2);
+}
+
+.tabs__scroller::-webkit-scrollbar {
+    width: 0;
+}
+
+.tabs__label {
+    padding-bottom: 8px;
+
+    color: var(--grey-3);
+
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.tabs__scroller::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.tabs__radio_all:checked ~ .tabs__scroller .tabs__label_all,
+.tabs__radio_elements:checked ~ .tabs__scroller .tabs__label_elements,
+.tabs__radio_containers:checked ~ .tabs__scroller .tabs__label_containers,
+.tabs__radio_templates:checked ~ .tabs__scroller .tabs__label_templates {
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
+}
