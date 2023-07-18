@@ -45,8 +45,8 @@
 
 .checkbox__icon {
     display: none;
-    width: 15px;
-    height: 13px;
+    width: 24px;
+    height: 24px;
 
     color: var(--white);
 }
