@@ -44,10 +44,26 @@
     --desktop-width: 1110px;
 }
 
+:root {
+    --body-font: 'Roboto';
+    --second-font: 'Inter';
+}
+
 body {
     height: 100vh;
 
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--body-font);
 
     background-color: var(--white);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
