@@ -18,7 +18,7 @@
 }
 
 .button:active {
-    transform: translateY(1px);
+    transform: translateY(4px);
     transition: all 200ms ease-in-out;
 }
 

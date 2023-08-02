@@ -8,18 +8,92 @@
     line-height: 24px;
 }
 
+.tabs__content {
+    display: none;
+}
+
 .tabs__radio {
     position: absolute;
     clip: rect(0, 0, 0, 0);
 }
 
-.tabs__scroller {
+.tabs__menu {
+    overflow: hidden;
+}
+
+.tabs__inner {
     display: flex;
-    column-gap: 24px;
+    flex-direction: column;
+    row-gap: 32px;
 
-    overflow: auto;
+    text-align: center;
+}
 
-    box-sizing: border-box;
+.tabs__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.tabs__items {
+    display: flex;
+    column-gap: 40px;
+
+    overflow-x: scroll;
+}
+
+.tabs__label {
+    position: relative;
+
+    display: block;
+    padding-bottom: 13px;
+
+    color: var(--grey-3);
+
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.tabs__label:hover {
+    color: var(--black);
+}
+
+.tabs__label::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 5px;
+    width: 100%;
+
+    background-color: black;
+
+    transform: scaleX(0);
+    transition: .5s all;
+
+    content: '';
+}
+
+#all-tab:checked ~ .tabs__content_all,
+#atoms-tab:checked ~ .tabs__content_atoms,
+#molecules-tab ~ .tabs__content_molecules,
+#organisms-tab ~ .tabs__content_organisms {
+    display: block;
+}
+
+#all-tab:checked ~ .tabs__menu label[for='all-tab'],
+#atoms-tab:checked ~ .tabs__menu label[for='atoms-tab'],
+#molecules-tab:checked ~ .tabs__menu label[for='molecules-tab'],
+#organisms-tab:checked ~ .tabs__menu label[for='organisms-tab'] {
+    color: var(--black);
+}
+
+#all-tab:checked ~ .tabs__menu label[for='all-tab']::after,
+#atoms-tab:checked ~ .tabs__menu label[for='atoms-tab']::after,
+#molecules-tab:checked ~ .tabs__menu label[for='molecules-tab']::after,
+#organisms-tab:checked ~ .tabs__menu label[for='organisms-tab']::after,
+.tabs__label:hover::after {
+    transform: scaleX(1);
 }
 
 .tabs__content {
@@ -29,28 +103,7 @@
     border-bottom: 1px solid var(--grey-2);
 }
 
-.tabs__scroller::-webkit-scrollbar {
-    width: 0;
-}
-
-.tabs__label {
-    padding-bottom: 8px;
-
-    color: var(--grey-3);
-
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-.tabs__scroller::-webkit-scrollbar {
+.tabs__items::-webkit-scrollbar {
     width: 0;
     height: 0;
-}
-
-.tabs__radio_all:checked ~ .tabs__scroller .tabs__label_all,
-.tabs__radio_elements:checked ~ .tabs__scroller .tabs__label_elements,
-.tabs__radio_containers:checked ~ .tabs__scroller .tabs__label_containers,
-.tabs__radio_templates:checked ~ .tabs__scroller .tabs__label_templates {
-    color: var(--black);
-    border-bottom: 5px solid var(--black);
 }

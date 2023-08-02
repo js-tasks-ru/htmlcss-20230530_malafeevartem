@@ -16,6 +16,7 @@
 
 .page__main {
     grid-area: main;
+    margin-top: 64px;
 }
 
 .page__footer {

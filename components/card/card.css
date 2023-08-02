@@ -1,11 +1,28 @@
 .card {
-    font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+
+    min-height: 250px;
+
+    font-family: var(--second-font);
 
     background-color: var(--white);
     border-radius: 12px;
 
     box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
-    box-sizing: border-box;
+    cursor: pointer;
+    transition: 250ms all;
+}
+
+.card__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+ 
+.card:hover {
+    box-shadow: 0px 4px 4px 0px rgba(33, 36, 41, 0.215);
 }
 
 .card__body {
@@ -13,9 +30,18 @@
     flex-direction: column;
     align-items: center;
 
-    padding: 12px;
+    padding: 24px;
 
     border-top: 1px solid var(--grey-2);
+}
+
+.card__component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    padding: 24px;
 }
 
 .card__title {
@@ -34,10 +60,6 @@
     font-size: 14px;
     line-height: 22px;
     color: var(--grey-3);
-}
-
-.card__component {
-    padding: 12px;
 }
 
 @media (min-width: 768px) {
