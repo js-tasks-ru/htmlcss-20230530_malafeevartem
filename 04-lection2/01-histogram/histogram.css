@@ -52,6 +52,8 @@
     column-gap: 1px;
 
     height: 50px;
+
+    animation: up .6s ease-out;
 }
 
 .histogram__column {
@@ -70,4 +72,15 @@
 
 .histogram__column_l {
     height: 100%;
+}
+
+@keyframes up {
+    from { 
+        transform: scaleY(0);
+        transform-origin: bottom center;
+    }
+    to { 
+        transform: scaleY(1);
+        transform-origin: bottom center;
+    }
 }
