@@ -99,24 +99,24 @@
                     <h1 class="preview__title">Reusable component library</h1>
                 </div>
                 <div class="preview__tabs tabs">
-                    <input class="tabs__radio" type="radio" id="all-tab" name="tab" checked>
-                    <input class="tabs__radio" type="radio" id="atoms-tab" name="tab">
-                    <input class="tabs__radio" type="radio" id="molecules-tab" name="tab">
-                    <input class="tabs__radio" type="radio" id="organisms-tab" name="tab">
+                    <input class="tabs__radio tabs__radio_all" type="radio" id="all-tab" name="tab" checked>
+                    <input class="tabs__radio tabs__radio_atoms" type="radio" id="atoms-tab" name="tab">
+                    <input class="tabs__radio tabs__radio_molecules" type="radio" id="molecules-tab" name="tab">
+                    <input class="tabs__radio tabs__radio_organisms" type="radio" id="organisms-tab" name="tab">
                     <div class="tabs__menu">
                         <div class="container">
                             <ul class="tabs__items">
                                 <li class="tabs__item">
-                                    <label class="tabs__label" for="all-tab">All components</label>
+                                    <label class="tabs__label tabs__label_all" for="all-tab">All components</label>
                                 </li>
                                 <li class="tabs__item">
-                                    <label class="tabs__label" for="atoms-tab">Atoms</label>
+                                    <label class="tabs__label tabs__label_atoms" for="atoms-tab">Atoms</label>
                                 </li>
                                 <li class="tabs__item">
-                                    <label class="tabs__label" for="molecules-tab">Molecules</label>
+                                    <label class="tabs__label tabs__label_molecules" for="molecules-tab">Molecules</label>
                                 </li>
                                 <li class="tabs__item">
-                                    <label class="tabs__label" for="organisms-tab">Organisms</label>
+                                    <label class="tabs__label tabs__label_organisms" for="organisms-tab">Organisms</label>
                                 </li>
                             </ul>
                         </div>
@@ -124,9 +124,9 @@
                     <div class="tabs__content tabs__content_all">
                         <div class="container">
                             <div class="tabs__inner">
-                                <div class="tabs__cards">
-                                    <a class="card">
-                                        <div class="card__component">
+                                <div class="tabs__cards cards">
+                                    <a class="cards__card">
+                                        <div class="cards__component">
                                             <div class="calendar">
                                                 <h3 class="calendar__title">October 2019</h3>
                                                 <div class="calendar__wrapper">
@@ -184,13 +184,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card__body">
-                                            <h3 class="card__title">Calendar</h3>
-                                            <p class="card__category">Molecular</p>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Calendar</h3>
+                                            <p class="cards__category">Molecular</p>
                                         </div>
                                     </a>
-                                    <a class="card">
-                                        <div class="card__component">
+                                    <a class="cards__card">
+                                        <div class="cards__component">
                                             <div class="histogram">
                                                 <div class="histogram__header">
                                                     <div class="histogram__information">
@@ -232,24 +232,24 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card__body">
-                                            <h3 class="card__title">Calendar</h3>
-                                            <p class="card__category">Molecular</p>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Calendar</h3>
+                                            <p class="cards__category">Molecular</p>
                                         </div>
                                     </a>
-                                    <a class="card">
-                                        <div class="card__component">
+                                    <a class="cards__card">
+                                        <div class="cards__component">
                                             <div class="avatar avatar_lg">
                                                 <img class="avatar__image" src="06-lection4/01-avatar/public/avatar-200.jpg" alt="Аватар пользователя"/>
                                             </div>
                                         </div>
-                                        <div class="card__body">
-                                            <h3 class="card__title">Calendar</h3>
-                                            <p class="card__category">Molecular</p>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Calendar</h3>
+                                            <p class="cards__category">Molecular</p>
                                         </div>
                                     </a>
-                                    <a class="card">
-                                        <div class="card__component">
+                                    <a class="cards__card">
+                                        <div class="cards__component">
                                             <button class="button button_primary" type="button" id="modal-open">Open modal</button>
                                             <div class="modal" id="modal">
                                                 <div class="modal__inner">
@@ -266,13 +266,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card__body">
-                                            <h3 class="card__title">Calendar</h3>
-                                            <p class="card__category">Molecular</p>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Calendar</h3>
+                                            <p class="cards__category">Molecular</p>
                                         </div>
                                     </a>
-                                    <a class="card">
-                                        <div class="card__component">
+                                    <a class="cards__card">
+                                        <div class="cards__component">
                                             <div class="tooltip">
                                                 <div class="tooltip__icon">
                                                     <svg class="tooltip__question" viewBox="0 0 24 24">
@@ -284,13 +284,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card__body">
-                                            <h3 class="card__title">Calendar</h3>
-                                            <p class="card__category">Molecular</p>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Calendar</h3>
+                                            <p class="cards__category">Molecular</p>
                                         </div>
                                     </a>
-                                    <a class="card">
-                                        <div class="card__component">
+                                    <a class="cards__card">
+                                        <div class="cards__component">
                                             <div class="skeleton">
                                                 <div class="skeleton__top">
                                                     <div class="skeleton__logo"></div>
@@ -305,9 +305,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card__body">
-                                            <h3 class="card__title">Calendar</h3>
-                                            <p class="card__category">Molecular</p>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Calendar</h3>
+                                            <p class="cards__category">Molecular</p>
                                         </div>
                                     </a>
                                 </div>
@@ -320,20 +320,20 @@
                     <div class="tabs__content tabs__content_atoms">
                         <div class="container">
                             <div class="tabs__inner">
-                                <div class="tabs__cards">
-                                    <a class="card">
-                                        <div class="card__component">
+                                <div class="tabs__cards cards">
+                                    <a class="cards__card">
+                                        <div class="cards__component">
                                             <div class="avatar avatar_lg">
                                                 <img class="avatar__image" src="06-lection4/01-avatar/public/avatar-200.jpg" alt="Аватар пользователя"/>
                                             </div>
                                         </div>
-                                        <div class="card__body">
-                                            <h3 class="card__title">Calendar</h3>
-                                            <p class="card__category">Molecular</p>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Calendar</h3>
+                                            <p class="cards__category">Molecular</p>
                                         </div>
                                     </a>
-                                    <a class="card">
-                                        <div class="card__component">
+                                    <a class="cards__card">
+                                        <div class="cards__component">
                                             <div class="tooltip">
                                                 <div class="tooltip__icon">
                                                     <svg class="tooltip__question" viewBox="0 0 24 24">
@@ -345,14 +345,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card__body">
-                                            <h3 class="card__title">Calendar</h3>
-                                            <p class="card__category">Molecular</p>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Calendar</h3>
+                                            <p class="cards__category">Molecular</p>
                                         </div>
                                     </a>
-                                    <a class="card">
-                                        <div class="card__component">
-                                            <div class="card__flex">
+                                    <a class="cards__card">
+                                        <div class="cards__component">
+                                            <div class="cards__flex">
                                                 <button class="button button_primary" type="button">Primary</button>
                                                 <button class="button button_primary" type="button" disabled>Primary</button>
                                                 <button class="button button_secondary" type="button">Secondary</button>
@@ -361,14 +361,14 @@
                                                 <button class="button button_alternate" type="button" disabled>Alternate</button>
                                             </div>
                                         </div>
-                                        <div class="card__body">
-                                            <h3 class="card__title">Calendar</h3>
-                                            <p class="card__category">Molecular</p>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Calendar</h3>
+                                            <p class="cards__category">Molecular</p>
                                         </div>
                                     </a>
-                                    <a class="card">
-                                        <div class="card__component">
-                                            <div class="card__flex">
+                                    <a class="cards__card">
+                                        <div class="cards__component">
+                                            <div class="cards__flex">
                                                 <label class="radio">
                                                     <input class="radio__input" name="test" type="radio" checked>
                                                     <div class="radio__state">
@@ -398,14 +398,14 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="card__body">
-                                            <h3 class="card__title">Calendar</h3>
-                                            <p class="card__category">Molecular</p>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Calendar</h3>
+                                            <p class="cards__category">Molecular</p>
                                         </div>
                                     </a>
-                                    <a class="card">
-                                        <div class="card__component">
-                                            <div class="card__flex">
+                                    <a class="cards__card">
+                                        <div class="cards__component">
+                                            <div class="cards__flex">
                                                 <label class="toggler">
                                                     <input class="toggler__input" type="checkbox" checked>
                                                     <div class="toggler__state">
@@ -431,9 +431,9 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="card__body">
-                                            <h3 class="card__title">Calendar</h3>
-                                            <p class="card__category">Molecular</p>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Calendar</h3>
+                                            <p class="cards__category">Molecular</p>
                                         </div>
                                     </a>
                                 </div>

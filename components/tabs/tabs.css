@@ -29,12 +29,6 @@
     text-align: center;
 }
 
-.tabs__cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 16px;
-}
-
 .tabs__items {
     display: flex;
     column-gap: 40px;
@@ -74,24 +68,24 @@
     content: '';
 }
 
-#all-tab:checked ~ .tabs__content_all,
-#atoms-tab:checked ~ .tabs__content_atoms,
-#molecules-tab ~ .tabs__content_molecules,
-#organisms-tab ~ .tabs__content_organisms {
+.tabs__radio_all:checked ~ .tabs__content_all,
+.tabs__radio_atoms:checked ~ .tabs__content_atoms,
+.tabs__radio_molecules:checked ~ .tabs__content_molecules,
+.tabs__radio_organisms:checked ~ .tabs__content_organisms {
     display: block;
 }
 
-#all-tab:checked ~ .tabs__menu label[for='all-tab'],
-#atoms-tab:checked ~ .tabs__menu label[for='atoms-tab'],
-#molecules-tab:checked ~ .tabs__menu label[for='molecules-tab'],
-#organisms-tab:checked ~ .tabs__menu label[for='organisms-tab'] {
+.tabs__radio_all:checked ~ .tabs__menu .tabs__label_all,
+.tabs__radio_atoms:checked ~ .tabs__menu .tabs__label_atoms,
+.tabs__radio_molecules:checked ~ .tabs__menu .tabs__label_molecules,
+.tabs__radio_organisms:checked ~ .tabs__menu .tabs__label_organisms {
     color: var(--black);
 }
 
-#all-tab:checked ~ .tabs__menu label[for='all-tab']::after,
-#atoms-tab:checked ~ .tabs__menu label[for='atoms-tab']::after,
-#molecules-tab:checked ~ .tabs__menu label[for='molecules-tab']::after,
-#organisms-tab:checked ~ .tabs__menu label[for='organisms-tab']::after,
+.tabs__radio_all:checked ~ .tabs__menu .tabs__label_all::after,
+.tabs__radio_atoms:checked ~ .tabs__menu .tabs__label_atoms::after,
+.tabs__radio_molecules:checked ~ .tabs__menu .tabs__label_molecules::after,
+.tabs__radio_organisms:checked ~ .tabs__menu .tabs__label_organisms::after,
 .tabs__label:hover::after {
     transform: scaleX(1);
 }
