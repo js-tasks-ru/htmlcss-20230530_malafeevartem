@@ -21,8 +21,6 @@
 
 .skeleton__line {
     height: 20px;
-
-    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
 .skeleton__line_s {
@@ -51,4 +49,24 @@
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+}
+
+.skeleton__logo, .skeleton__line {
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    background-size: 200%;
+
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: up;
+    animation-timing-function: linear;
+}
+
+@keyframes up {
+    from {
+        background-position: 100%;
+    }
+    to {
+        background-position: -100%;
+    }
 }

@@ -1,0 +1,79 @@
+.text-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    font: 20px/26px 'Inter', sans-serif;
+    color: var(--grey-4);
+}
+
+.text-field__label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;  
+    color: var(--grey-3);
+}
+
+.text-field__input {
+    width: 100%;
+    padding: 17px 44px 13px 24px;
+
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+
+    transition: border 0.5s;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+}
+
+.text-field__input:focus {
+    border-color: var(--blue);
+}
+
+.text-field__input::placeholder {
+    color: var(--grey-2);
+}
+
+.text-field__input:disabled {
+    background-color: var(--grey-2);
+    border-color: var(--grey-3);
+
+    cursor: default;
+    pointer-events: none;
+}
+
+.text-field__input:disabled::placeholder {
+    color: var(--grey-4);
+    opacity: 0.25;
+}
+
+.text-field__input:disabled + .text-field__icon {
+    display: none;
+}
+
+.text-field__control {
+    position: relative;
+}
+
+.text-field__control_error .text-field__input:not(:disabled) {
+    border-color: var(--error);
+}
+
+.text-field__control .text-field__icon::before {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    content: '';
+}
+
+.text-field__control_error .text-field__icon::before {
+    content: url('../../assets/images/alert-triangle.svg');
+}
+
+.text-field__control_success .text-field__icon::before {
+    content: url('../../assets/images/check-circle.svg');
+}

@@ -3,9 +3,8 @@
 
     display: inline-block;
 
-    font-family: 'Inter', sans-serif;
-
-    box-sizing: border-box;
+    font: 16px/24px 'Inter';
+    color: var(--grey-4);
 }
 
 .toggler__input {
@@ -13,74 +12,70 @@
     clip: rect(0, 0, 0, 0);
 }
 
-.toggler__state {
+.toggler__control {
+    position: relative;
+
     display: flex;
+    column-gap: 12px;
     align-items: center;
-    gap: 12px;
 
     cursor: pointer;
 }
 
-.toggler__control {
-    position: relative;
-
+.toggler__control::before {
+    display: block;
     width: 52px;
     height: 28px;
 
-    background: var(--white);
+    background-color: var(--white);
     border: 1px solid var(--grey-2);
     border-radius: 16px;
 
+    content: '';
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
     box-sizing: border-box;
 }
 
-.toggler__control::before {
+.toggler__control::after {
     position: absolute;
-    top: 1px;
-    left: 1px;
+    left: 2px;
 
     width: 24px;
     height: 24px;
 
     background-color: var(--grey-2);
-    border-radius: 50%;
+    border-radius: 16px;
 
-    content: "";
+    content: '';
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
 }
 
-.toggler__label {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-
-    color: var(--grey-4);
+.toggler__input:checked + .toggler__control::before {
+    background-color: var(--blue);
+    border-color: var(--blue);
 }
 
-.toggler__input:checked ~ .toggler__state .toggler__control {
-    background-color: var(--primary);
-    border-color: var(--primary);
-}
-
-.toggler__input:checked ~ .toggler__state .toggler__control::before {
-    left: initial;
-    right: 1px;
-
+.toggler__input:checked + .toggler__control::after {
     background-color: var(--white);
+    transform: translateX(calc(100%));
 }
 
-.toggler__input:disabled ~ .toggler__state .toggler__control {
-    background-color: var(--grey-2);
-    border-color: var(--grey-2);
+.toggler__input:focus + .toggler__control {
+    text-decoration: underline;
 }
 
-.toggler__input:disabled ~ .toggler__state .toggler__control::before {
-    background-color: var(--grey-3);
-}
-
-.toggler__input:focus ~ .toggler__state {
+.toggler__input:disabled + .toggler__control {
+    color: var(--grey-2);
+    
+    cursor: default;
     pointer-events: none;
 }
 
-.toggler__input:focus ~ .toggler__state .toggler__label {
-    text-decoration: underline;
+.toggler__input:disabled + .toggler__control::after {
+    background-color: var(--grey-3);
+    opacity: 0.75;
+}
+
+.toggler__input:disabled + .toggler__control::before {
+    background-color: var(--grey-2);
 }
