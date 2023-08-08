@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/utils.css">
+    <link rel="stylesheet" href="../05-lection3/03-calendar/calendar.css">
+    <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
+</head>
+
+<body>
+    <div class="page page_component">
+        <header class="page__header header header_component">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__mobile">
+                        <div class="header__mobile-toggle" id="mobile-toggle"></div>
+                        <div class="header__mobile-menu" id="mobile-menu">
+                            <div class="header__mobile-inner">
+                                <div class="header__mobile-switcher">
+                                    <span>Dark mode</span>
+                                    <label class="toggler">
+                                        <input class="toggler__input" type="checkbox">
+                                        <div class="toggler__state">
+                                            <div class="toggler__control"></div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="header__mobile-category">
+                                    <h3 class="header__mobile-title">Elements</h3>
+                                    <ul class="header__mobile-items">
+                                        <li class="header__mobile-items"><a class="header__mobile-link"
+                                                href="">Avatar</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="">Custom
+                                                form elements</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link"
+                                                href="">Button</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link"
+                                                href="">Avatar</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header__mobile-category">
+                                    <h3 class="header__mobile-title">Containers</h3>
+                                    <ul class="header__mobile-items">
+                                        <li class="header__mobile-items"><a
+                                                class="header__mobile-link header__mobile-link_active"
+                                                href="">Avatar</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="">Custom
+                                                form elements</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link"
+                                                href="">Button</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link"
+                                                href="">Avatar</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="header__logo" href="../index.html">
+                        <svg class="header__icon" width="110" height="32" viewBox="0 0 110 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_90689_201)">
+                                <rect y="1" width="30" height="30" fill="#212429" />
+                                <rect x="38" width="32" height="32" rx="16" fill="#212429" />
+                                <path d="M78 0L110 32H78V0Z" fill="#212429" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_90689_201">
+                                    <rect width="110" height="32" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+
+                    <div class="header__content">
+                        <nav class="header__menu">
+                            <ul class="header__list">
+                                <li class="header__item"><a class="header__link header__link_active"
+                                        href="">Components</a></li>
+                                <li class="header__item"><a class="header__link" href="">About</a></li>
+                                <li class="header__item"><a class="header__link" href="">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__switcher">
+                            <label class="toggler">
+                                <input class="toggler__input" type="checkbox">
+                                <div class="toggler__state">
+                                    <div class="toggler__control"></div>
+                                    <div class="toggler__label">Off</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page__main main main_component">
+            <div class="container container_component">
+                <div class="components">
+                    <aside class="components__list sidebar">
+                        <div class="sidebar__section">
+                            <h3 class="sidebar__title">Molecular</h3>
+                            <ul class="sidebar__list">
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link sidebar__link_active" href="../pages/calendar.html">Calendar</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../pages/histogram.html">Histogram</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../pages/avatar.html">Avatar</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="">Calendar</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="">Calendar</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="">Calendar</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar__section">
+                            <h3 class="sidebar__title">Containers</h3>
+                            <ul class="sidebar__list">
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="">Calendar</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="">Calendar</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="">Calendar</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="">Calendar</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="">Calendar</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar__section">
+                            <h3 class="sidebar__title">Templates</h3>
+                            <ul class="sidebar__list">
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="">Calendar</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="">Calendar</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="">Calendar</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="">Calendar</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="">Calendar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <div class="components__component component">
+                        <div class="component__top">
+                            <h3 class="component__title">Calendar</h3>
+                            <div class="component__content">
+                                <div class="calendar">
+                                    <h3 class="calendar__title">October 2019</h3>
+                                    <div class="calendar__wrapper">
+                                        <div class="calendar__inner">
+                                            <div class="calendar__cell calendar__cell_day">Mon</div>
+                                            <div class="calendar__cell calendar__cell_day">Tue</div>
+                                            <div class="calendar__cell calendar__cell_day">Wed</div>
+                                            <div class="calendar__cell calendar__cell_day">Thu</div>
+                                            <div class="calendar__cell calendar__cell_day">Fri</div>
+                                            <div class="calendar__cell calendar__cell_day">Sat</div>
+                                            <div class="calendar__cell calendar__cell_day">Sun</div>
+                                            <div class="calendar__cell"></div>
+                                            <div class="calendar__cell"></div>
+                                            <div class="calendar__cell"></div>
+                                            <div class="calendar__cell"></div>
+                                            <div class="calendar__cell">1</div>
+                                            <div class="calendar__cell">2</div>
+                                            <div class="calendar__cell">3</div>
+                                            <div class="calendar__cell">4</div>
+                                            <div class="calendar__cell">5</div>
+                                            <div class="calendar__cell">6</div>
+                                            <div class="calendar__cell">7</div>
+                                            <div class="calendar__cell">8</div>
+                                            <div class="calendar__cell">9</div>
+                                            <div class="calendar__cell">10</div>
+                                            <div class="calendar__cell">11</div>
+                                            <div class="calendar__cell">12</div>
+                                            <div class="calendar__cell">13</div>
+                                            <div class="calendar__cell">14</div>
+                                            <div class="calendar__cell">15</div>
+                                            <div class="calendar__cell">16</div>
+                                            <div class="calendar__cell">17</div>
+                                            <div class="calendar__cell calendar__cell_active">18</div>
+                                            <div class="calendar__cell calendar__cell_interval">19</div>
+                                            <div class="calendar__cell calendar__cell_interval">20</div>
+                                            <div class="calendar__cell calendar__cell_interval">21</div>
+                                            <div class="calendar__cell calendar__cell_interval">22</div>
+                                            <div class="calendar__cell calendar__cell_active">23</div>
+                                            <div class="calendar__cell">24</div>
+                                            <div class="calendar__cell">25</div>
+                                            <div class="calendar__cell">26</div>
+                                            <div class="calendar__cell">27</div>
+                                            <div class="calendar__cell">28</div>
+                                            <div class="calendar__cell">29</div>
+                                            <div class="calendar__cell">30</div>
+                                            <div class="calendar__cell">31</div>
+                                            <div class="calendar__cell"></div>
+                                            <div class="calendar__cell"></div>
+                                            <div class="calendar__cell"></div>
+                                            <div class="calendar__cell"></div>
+                                            <div class="calendar__cell"></div>
+                                            <div class="calendar__cell"></div>
+                                            <div class="calendar__cell"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component__bottom">
+                            <div class="component__tabs tabs tabs_component">
+                                <input class="tabs__radio tabs__radio_html" type="radio" id="html-tab" name="tab"
+                                    checked>
+                                <input class="tabs__radio tabs__radio_css" type="radio" id="css-tab" name="tab">
+                                <div class="tabs__menu">
+                                    <ul class="tabs__items">
+                                        <li class="tabs__item">
+                                            <label class="tabs__label tabs__label_html" for="html-tab">Html</label>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <label class="tabs__label tabs__label_css" for="css-tab">Css</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tabs__content tabs__content_html">
+                                    HTML
+                                </div>
+                                <div class="tabs__content tabs__content_css">
+                                    CSS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page__footer footer footer_component">
+            <div class="container">
+                <div class="footer__inner">
+                    <h2 class="footer__title">Reusable component library</h2>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

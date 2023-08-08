@@ -4,3 +4,8 @@
 
     background-color: var(--white);
 }
+
+.main_component {
+    padding: 0;
+    background-color: var(--grey-5);
+}

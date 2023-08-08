@@ -3,9 +3,9 @@
 
     display: grid;
     grid-template-areas: 'header'
-                         'main'
-                         'footer';
-    grid-template-rows: auto 1fr auto;
+        'main'
+        'footer';
+    grid-template-rows: min-content 1fr min-content;
 
     background-color: var(--grey-5);
 }

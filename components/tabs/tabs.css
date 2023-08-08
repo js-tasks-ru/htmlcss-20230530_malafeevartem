@@ -71,21 +71,32 @@
 .tabs__radio_all:checked ~ .tabs__content_all,
 .tabs__radio_atoms:checked ~ .tabs__content_atoms,
 .tabs__radio_molecules:checked ~ .tabs__content_molecules,
-.tabs__radio_organisms:checked ~ .tabs__content_organisms {
+.tabs__radio_organisms:checked ~ .tabs__content_organisms,
+.tabs__radio_html:checked ~ .tabs__content_html,
+.tabs__radio_css:checked ~ .tabs__content_css {
     display: block;
 }
 
 .tabs__radio_all:checked ~ .tabs__menu .tabs__label_all,
 .tabs__radio_atoms:checked ~ .tabs__menu .tabs__label_atoms,
 .tabs__radio_molecules:checked ~ .tabs__menu .tabs__label_molecules,
-.tabs__radio_organisms:checked ~ .tabs__menu .tabs__label_organisms {
+.tabs__radio_organisms:checked ~ .tabs__menu .tabs__label_organisms,
+.tabs__radio_html:checked ~ .tabs__menu .tabs__label_html,
+.tabs__radio_css:checked ~ .tabs__menu .tabs__label_css {
     color: var(--black);
+}
+
+.tabs__radio_html ~ .tabs__menu .tabs__label_html,
+.tabs__radio_css ~ .tabs__menu .tabs__label_css {
+    text-transform: uppercase;
 }
 
 .tabs__radio_all:checked ~ .tabs__menu .tabs__label_all::after,
 .tabs__radio_atoms:checked ~ .tabs__menu .tabs__label_atoms::after,
 .tabs__radio_molecules:checked ~ .tabs__menu .tabs__label_molecules::after,
 .tabs__radio_organisms:checked ~ .tabs__menu .tabs__label_organisms::after,
+.tabs__radio_html:checked ~ .tabs__menu .tabs__label_html::after,
+.tabs__radio_css:checked ~ .tabs__menu .tabs__label_css::after,
 .tabs__label:hover::after {
     transform: scaleX(1);
 }
@@ -95,6 +106,11 @@
     background-color: var(--grey-5);
     border-top: 1px solid var(--grey-2);
     border-bottom: 1px solid var(--grey-2);
+}
+
+.tabs_component .tabs__content {
+    background-color: transparent;
+    border-bottom: none;
 }
 
 .tabs__items::-webkit-scrollbar {

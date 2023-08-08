@@ -1,5 +1,5 @@
 .header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 100;
 
@@ -9,6 +9,10 @@
     font-family: var(--second-font);
 
     background-color: var(--white);
+}
+
+.header_component {
+    background-color: var(--grey-5);
 }
 
 .header__inner {
@@ -49,10 +53,6 @@
 
 .header__icon {
     display: block;
-}
-
-.header_component {
-    background-color: transparent;
 }
 
 .header__switcher, .header__mobile-toggle {

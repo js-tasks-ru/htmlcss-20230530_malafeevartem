@@ -1,13 +1,29 @@
 .component {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 52px;
+
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 32px;
 
     font-family: 'Inter', sans-serif;
 
     background-color: var(--white);
     box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
     border-radius: 8px;
+}
+
+.component__top {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.component__content {
+    max-width: 350px;
+    height: auto;
 }
 
 .component__title {
@@ -17,4 +33,21 @@
     line-height: 26px;
     font-weight: 400;
     color: var(--grey-4);
+}
+
+
+@media screen and (min-width: 768px) {
+    .component {
+        row-gap: 64px;
+        padding: 32px 48px;
+    }
+
+    .component__top {
+        row-gap: 58px;
+    }
+
+    .component__title {
+        font-size: 28px;
+        line-height: 38px;
+    }
 }
