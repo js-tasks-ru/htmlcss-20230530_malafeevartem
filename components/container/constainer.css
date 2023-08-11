@@ -1,8 +1,26 @@
 .container {
-    min-width: 320px;
+    width: 100%;
     max-width: 1110px;
-    margin: 0 auto;
-    padding: 0 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 
     box-sizing: border-box;
+}
+
+.container_component {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .container_component {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (min-width: 1110px) {
+    .container {
+        margin: 0 auto;
+    }
 }

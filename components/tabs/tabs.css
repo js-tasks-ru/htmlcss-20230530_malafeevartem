@@ -1,0 +1,119 @@
+.tabs {
+    display: grid;
+
+    position: relative;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.tabs__content {
+    display: none;
+}
+
+.tabs__radio {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.tabs__menu {
+    overflow: hidden;
+}
+
+.tabs__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    text-align: center;
+}
+
+.tabs__items {
+    display: flex;
+    column-gap: 40px;
+
+    overflow-x: scroll;
+}
+
+.tabs__label {
+    position: relative;
+
+    display: block;
+    padding-bottom: 13px;
+
+    color: var(--grey-3);
+
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.tabs__label:hover {
+    color: var(--black);
+}
+
+.tabs__label::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 5px;
+    width: 100%;
+
+    background-color: black;
+
+    transform: scaleX(0);
+    transition: .5s all;
+
+    content: '';
+}
+
+.tabs__radio_all:checked ~ .tabs__content_all,
+.tabs__radio_atoms:checked ~ .tabs__content_atoms,
+.tabs__radio_molecules:checked ~ .tabs__content_molecules,
+.tabs__radio_organisms:checked ~ .tabs__content_organisms,
+.tabs__radio_html:checked ~ .tabs__content_html,
+.tabs__radio_css:checked ~ .tabs__content_css {
+    display: block;
+}
+
+.tabs__radio_all:checked ~ .tabs__menu .tabs__label_all,
+.tabs__radio_atoms:checked ~ .tabs__menu .tabs__label_atoms,
+.tabs__radio_molecules:checked ~ .tabs__menu .tabs__label_molecules,
+.tabs__radio_organisms:checked ~ .tabs__menu .tabs__label_organisms,
+.tabs__radio_html:checked ~ .tabs__menu .tabs__label_html,
+.tabs__radio_css:checked ~ .tabs__menu .tabs__label_css {
+    color: var(--black);
+}
+
+.tabs__radio_html ~ .tabs__menu .tabs__label_html,
+.tabs__radio_css ~ .tabs__menu .tabs__label_css {
+    text-transform: uppercase;
+}
+
+.tabs__radio_all:checked ~ .tabs__menu .tabs__label_all::after,
+.tabs__radio_atoms:checked ~ .tabs__menu .tabs__label_atoms::after,
+.tabs__radio_molecules:checked ~ .tabs__menu .tabs__label_molecules::after,
+.tabs__radio_organisms:checked ~ .tabs__menu .tabs__label_organisms::after,
+.tabs__radio_html:checked ~ .tabs__menu .tabs__label_html::after,
+.tabs__radio_css:checked ~ .tabs__menu .tabs__label_css::after,
+.tabs__label:hover::after {
+    transform: scaleX(1);
+}
+
+.tabs__content {
+    padding: 24px 0;
+    background-color: var(--grey-5);
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--grey-2);
+}
+
+.tabs_component .tabs__content {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.tabs__items::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}

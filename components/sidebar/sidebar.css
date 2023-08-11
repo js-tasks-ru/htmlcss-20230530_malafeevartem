@@ -12,6 +12,12 @@
     row-gap: 16px;
 }
 
+.sidebar__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
 .sidebar__title {
     margin: 0;
 
@@ -22,13 +28,22 @@
 }
 
 .sidebar__item {
+    list-style: none;
+}
+
+.sidebar__link {
     font-size: 14px;
     line-height: 22px;
     color: var(--black);
 
-    list-style: none;
+    text-decoration: none;
+    outline: none;
 }
 
-.sidebar__item_active {
+.sidebar__link_active {
     color: var(--active);
+}
+
+.sidebar__link:is(:focus, :hover) {
+    border-bottom: 1px solid var(--black);
 }

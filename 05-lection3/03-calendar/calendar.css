@@ -5,6 +5,8 @@
     flex-direction: column;
     row-gap: 24px;
 
+    width: 100%;
+    height: auto;
     padding: 28px 26px 32px;
 
     font: 400 16px/20px 'Inter', sans-serif;
@@ -61,21 +63,4 @@
 .calendar__cell_day {
     font-size: 14px;
     color: #90A0B7;
-}
-
-@media (max-width: 768px) {
-    .calendar_sm {
-        row-gap: 18px;
-    
-        padding: 0;
-        border: 0;
-    }
-    
-    .calendar_sm .calendar__title {
-        font-size: 16px;
-    }
-    
-    .calendar_sm .calendar__cell {
-        font-size: 10px;
-    }
 }

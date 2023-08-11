@@ -6,10 +6,11 @@
 @import '../../components/footer/footer.css';
 @import '../../components/preview/preview.css';
 @import '../../components/container/constainer.css';
-@import '../../components/card/card.css';
+@import '../../components/cards/cards.css';
 @import '../../components/sidebar/sidebar.css';
 @import '../../components/components/components.css';
 @import '../../components/component/component.css';
+@import '../../components/tabs/tabs.css';
 
 
 :root {
@@ -43,8 +44,36 @@
     --desktop-width: 1110px;
 }
 
+:root {
+    --body-font: 'Roboto';
+    --second-font: 'Inter';
+}
+
 body {
     height: 100vh;
 
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--body-font);
+
+    background-color: var(--white);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
