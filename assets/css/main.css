@@ -38,10 +38,68 @@
 
     --shadow: var(--black);
     --active: #D84910;
+}
 
-    --phone_width: 320px;
-    --tablet-width: 768px;
-    --desktop-width: 1110px;
+:root {
+    --background-color: var(--white);
+    --background-second-color: var(--grey-5);
+
+    --text-color: var(--grey-3);
+    --text-hover-color: var(--black);
+    --text-active-color: var(--black);
+
+    --text-second-color: var(--grey-4);
+
+    --text-third-color: var(--black);
+
+    --text-fifth-color: var(--black);
+    --text-fifth-hover-color: var(--red);
+
+    --text-sixth-color: var(--black);
+
+    --h1-color: var(--grey-4);
+    --h1-second-color: var(--black);
+    --h2-color: var(--black);
+    --h3-color: var(--black);
+
+    --logo-color: var(--black);
+
+    --calendar-color: #334D6E;
+    --calendar-second-color: var(--calendar-color);
+
+    --tooltip-icon-color: var(--black);
+
+    --box-color: #2124290d;
+}
+
+html[data-theme-dark] {
+    --background-color: var(--black);
+    --background-second-color: var(--grey-4);
+
+    --text-hover-color: var(--white);
+    --text-active-color: var(--white);
+
+    --text-second-color: var(--grey-3);
+    --text-third-color: var(--white);
+
+    --text-fifth-color: var(--grey-3);
+
+    --text-sixth-color: var(--white);
+
+
+    --h1-color: var(--grey-3);
+    --h1-second-color: var(--grey-3);
+    --h2-color: var(--white);
+    --h3-color: var(--grey-3);
+
+    --logo-color: var(--white);
+
+    --calendar-color: var(--grey-3);
+    --calendar-second-color: var(--white);
+
+    --tooltip-icon-color: var(--white);
+
+    --box-color: #e8ebed37;
 }
 
 :root {
@@ -53,8 +111,7 @@ body {
     height: 100vh;
 
     font-family: var(--body-font);
-
-    background-color: var(--white);
+    background-color: var(--background-color);
 }
 
 ul {

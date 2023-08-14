@@ -2,10 +2,10 @@
     padding: 16px 0;
 
     font-family: 'Inter', sans-serif;
-    color: var(--black);
+    color: var(--text-second-color);
     text-align: center;
 
-    background-color: var(--white);
+    background-color: var(--background-color);
 }
 
 .footer_component {
