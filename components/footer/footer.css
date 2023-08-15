@@ -9,7 +9,7 @@
 }
 
 .footer_component {
-    background-color: var(--grey-5);
+    background-color: var(--background-component-color);
 }
 
 .footer__inner {

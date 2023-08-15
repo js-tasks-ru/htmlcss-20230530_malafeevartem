@@ -43,6 +43,8 @@
 :root {
     --background-color: var(--white);
     --background-second-color: var(--grey-5);
+    --background-component-color: var(--grey-5);
+    --background-second-component-color: var(--white);
 
     --text-color: var(--grey-3);
     --text-hover-color: var(--black);
@@ -75,6 +77,8 @@
 html[data-theme-dark] {
     --background-color: var(--black);
     --background-second-color: var(--grey-4);
+    --background-component-color: var(--grey-4);
+    --background-second-component-color: var(--black);
 
     --text-hover-color: var(--white);
     --text-active-color: var(--white);

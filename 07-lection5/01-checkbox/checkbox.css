@@ -4,6 +4,7 @@
     display: inline-block;
     
     font-family: 'Inter', sans-serif;
+    color: var(--text-sixth-color);
 
     box-sizing: border-box;
 }
@@ -40,7 +41,6 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color: var(--grey-4);
 }
 
 .checkbox__icon {
@@ -53,6 +53,7 @@
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__control {
     background-color: var(--primary);
+    animation: checkbox-pulse 1.2s;
     border-color: var(--primary);
 }
 
@@ -76,3 +77,16 @@
 .checkbox__input:disabled ~ .checkbox__state {
     pointer-events: none;
 }
+
+@keyframes checkbox-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(107, 107, 107, 0.718);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+  }
+  

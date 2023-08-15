@@ -4,7 +4,7 @@
     display: inline-block;
 
     font: 16px/24px 'Inter';
-    color: var(--grey-4);
+    color: var(--text-sixth-color);
 }
 
 .toggler__input {
@@ -27,7 +27,7 @@
     width: 52px;
     height: 28px;
 
-    background-color: var(--white);
+    background-color: transparent;
     border: 1px solid var(--grey-2);
     border-radius: 16px;
 

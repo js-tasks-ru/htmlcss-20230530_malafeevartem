@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="./07-lection5/02-radio/radio.css">
     <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
     <link rel="stylesheet" href="./07-lection5/01-checkbox/checkbox.css">
+    <link rel="stylesheet" href="./07-lection5/04-input/input.css">
+    <link rel="stylesheet" href="./03-lection1/02-accordion/accordion.css">
 </head>
 
-<body>
+<body class="preload">
     <div class="page">
         <header class="page__header header">
             <div class="container">
@@ -34,21 +36,38 @@
                                     </label>
                                 </div>
                                 <div class="header__mobile-category">
-                                    <h3 class="header__mobile-title">Elements</h3>
+                                    <h3 class="header__mobile-title">Menu</h3>
                                     <ul class="header__mobile-items">
-                                        <li class="header__mobile-items"><a class="header__mobile-link" href="">Avatar</a></li>
-                                        <li class="header__mobile-items"><a class="header__mobile-link" href="">Custom form elements</a></li>
-                                        <li class="header__mobile-items"><a class="header__mobile-link" href="">Button</a></li>
-                                        <li class="header__mobile-items"><a class="header__mobile-link" href="">Avatar</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link  header__mobile-link_active" href="index.html">Components</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="index.html">About</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="index.html">Contact</a></li>
                                     </ul>
                                 </div>
                                 <div class="header__mobile-category">
-                                    <h3 class="header__mobile-title">Containers</h3>
+                                    <h3 class="header__mobile-title">Atoms</h3>
                                     <ul class="header__mobile-items">
-                                        <li class="header__mobile-items"><a class="header__mobile-link header__mobile-link_active" href="">Avatar</a></li>
-                                        <li class="header__mobile-items"><a class="header__mobile-link" href="">Custom form elements</a></li>
-                                        <li class="header__mobile-items"><a class="header__mobile-link" href="">Button</a></li>
-                                        <li class="header__mobile-items"><a class="header__mobile-link" href="">Avatar</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Avatar</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Tooltip</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Radio</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Toggler</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Checkbox</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Button</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header__mobile-category">
+                                    <h3 class="header__mobile-title">Molecules</h3>
+                                    <ul class="header__mobile-items">
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Calendar</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Skeleton</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Input</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header__mobile-category">
+                                    <h3 class="header__mobile-title">Organisms</h3>
+                                    <ul class="header__mobile-items">
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Modal</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Histogram</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Accordion</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -166,7 +185,7 @@
                                             <p class="cards__category">Organism</p>
                                         </div>
                                     </a>
-                                    <a class="cards__card">
+                                    <a class="cards__card" href="pages/calendar.html">
                                         <div class="cards__component">
                                             <div class="calendar">
                                                 <h3 class="calendar__title">October 2019</h3>
@@ -227,7 +246,7 @@
                                         </div>
                                         <div class="cards__body">
                                             <h3 class="cards__title">Calendar</h3>
-                                            <p class="cards__category">Molecules</p>
+                                            <p class="cards__category">Molecule</p>
                                         </div>
                                     </a>
                                     <a class="cards__card">
@@ -315,7 +334,7 @@
                                         <div class="cards__component">
                                             <div class="tooltip">
                                                 <div class="tooltip__icon">
-                                                    <svg class="tooltip__question" viewBox="0 0 24 24">
+                                                    <svg class="tooltip__question" width="24" height="24">
                                                         <use xlink:href="../../assets/images/icons.svg#question"></use>
                                                     </svg>                                       
                                                 </div>
@@ -347,7 +366,7 @@
                                                         <div class="radio__control">
                                                             <div class="radio__inner"></div>
                                                         </div>
-                                                        <div class="radio__label">Default</div>
+                                                        <div class="radio__label">Checked</div>
                                                     </div>
                                                 </label>
                                                 <label class="radio">
@@ -356,90 +375,315 @@
                                                         <div class="radio__control">
                                                             <div class="radio__inner"></div>
                                                         </div>
-                                                        <div class="radio__label">Default</div>
+                                                        <div class="radio__label">Disabled</div>
                                                     </div>
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="cards__body">
                                             <h3 class="cards__title">Radio</h3>
-                                            <p class="cards__category">Molecular</p>
+                                            <p class="cards__category">Atom</p>
                                         </div>
                                     </a>
                                     <a class="cards__card">
                                         <div class="cards__component">
                                             <div class="cards__flex">
-                                                <label class="checkbox">
-                                                    <input class="checkbox__input" type="checkbox">
-                                                    <div class="checkbox__state">
-                                                        <div class="checkbox__control">
-                                                            <svg class="checkbox__icon" viewBox="0 0 15 13" width="15" height="13">
-                                                                <use xlink:href="../../assets/images/icons.svg#check" />
-                                                            </svg>
-                                                        </div>
-                                                        <div class="checkbox__label">Default</div>
-                                                    </div>
-                                                </label>
-                                                <label class="checkbox">
-                                                    <input class="checkbox__input" type="checkbox">
-                                                    <div class="checkbox__state">
-                                                        <div class="checkbox__control">
-                                                            <svg class="checkbox__icon" viewBox="0 0 15 13" width="15" height="13">
-                                                                <use xlink:href="../../assets/images/icons.svg#check" />
-                                                            </svg>
-                                                        </div>
-                                                        <div class="checkbox__label">Default</div>
-                                                    </div>
-                                                </label>
-                                                <label class="checkbox">
-                                                    <input class="checkbox__input" type="checkbox">
-                                                    <div class="checkbox__state">
-                                                        <div class="checkbox__control">
-                                                            <svg class="checkbox__icon" viewBox="0 0 15 13" width="15" height="13">
-                                                                <use xlink:href="../../assets/images/icons.svg#check" />
-                                                            </svg>
-                                                        </div>
-                                                        <div class="checkbox__label">Default</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="cards__body">
-                                            <h3 class="cards__title">Calendar</h3>
-                                            <p class="cards__category">Molecular</p>
-                                        </div>
-                                    </a>
-                                    <a class="cards__card">
-                                        <div class="cards__component">
-                                            <div class="cards__flex">
-                                                <label class="toggler">
-                                                    <input class="toggler__input" type="checkbox" checked>
-                                                    <div class="toggler__state">
-                                                        <div class="toggler__control"></div>
-                                                        <div class="toggler__label">On</div>
-                                                    </div>
-                                                </label>
-
                                                 <label class="toggler">
                                                     <input class="toggler__input" type="checkbox">
-                                                    <div class="toggler__state">
-                                                        <div class="toggler__control"></div>
-                                                        <div class="toggler__label">Off</div>
-                                                    </div>
+                                                    <span class="toggler__control">Off</span>
                                                 </label>
-                                        
+                                                <label class="toggler">
+                                                    <input class="toggler__input" type="checkbox" checked>
+                                                    <span class="toggler__control">On</span>
+                                                </label>
                                                 <label class="toggler">
                                                     <input class="toggler__input" type="checkbox" disabled>
-                                                    <div class="toggler__state">
-                                                        <div class="toggler__control"></div>
-                                                        <div class="toggler__label">Off</div>
+                                                    <span class="toggler__control">Disabled</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Toggler</h3>
+                                            <p class="cards__category">Atom</p>
+                                        </div>
+                                    </a>
+                                    <a class="cards__card">
+                                        <div class="cards__component">
+                                            <div class="cards__flex">
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox">
+                                                    <div class="checkbox__state">
+                                                        <div class="checkbox__control">
+                                                            <svg class="checkbox__icon" viewBox="0 0 15 13" width="15" height="13">
+                                                                <use xlink:href="../../assets/images/icons.svg#check" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="checkbox__label">Default</div>
+                                                    </div>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" checked>
+                                                    <div class="checkbox__state">
+                                                        <div class="checkbox__control">
+                                                            <svg class="checkbox__icon" viewBox="0 0 15 13" width="15" height="13">
+                                                                <use xlink:href="../../assets/images/icons.svg#check" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="checkbox__label">Checked</div>
+                                                    </div>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" disabled>
+                                                    <div class="checkbox__state">
+                                                        <div class="checkbox__control">
+                                                            <svg class="checkbox__icon" viewBox="0 0 15 13" width="15" height="13">
+                                                                <use xlink:href="../../assets/images/icons.svg#check" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="checkbox__label">Disabled</div>
                                                     </div>
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="cards__body">
+                                            <h3 class="cards__title">Checkbox</h3>
+                                            <p class="cards__category">Atom</p>
+                                        </div>
+                                    </a>
+                                    <a class="cards__card">
+                                        <div class="cards__component">
+                                            <div class="cards__flex">
+                                                <button class="button button_primary" type="button">Primary</button>
+                                                <button class="button button_secondary" type="button">Secondary</button>
+                                                <button class="button button_alternate" type="button">Alternate</button>
+                                            </div>
+                                        </div>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Button</h3>
+                                            <p class="cards__category">Atom</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__content tabs__content_molecules">
+                        <div class="container">
+                            <div class="tabs__inner">
+                                <div class="tabs__cards cards">
+                                    <a class="cards__card">
+                                        <div class="cards__component">
+                                            <div class="calendar">
+                                                <h3 class="calendar__title">October 2019</h3>
+                                                <div class="calendar__wrapper">
+                                                    <div class="calendar__inner">
+                                                        <div class="calendar__cell calendar__cell_day">Mon</div>
+                                                        <div class="calendar__cell calendar__cell_day">Tue</div>
+                                                        <div class="calendar__cell calendar__cell_day">Wed</div>
+                                                        <div class="calendar__cell calendar__cell_day">Thu</div>
+                                                        <div class="calendar__cell calendar__cell_day">Fri</div>
+                                                        <div class="calendar__cell calendar__cell_day">Sat</div>
+                                                        <div class="calendar__cell calendar__cell_day">Sun</div>
+                                                        <div class="calendar__cell"></div>
+                                                        <div class="calendar__cell"></div>
+                                                        <div class="calendar__cell"></div>
+                                                        <div class="calendar__cell"></div>
+                                                        <div class="calendar__cell">1</div>
+                                                        <div class="calendar__cell">2</div>
+                                                        <div class="calendar__cell">3</div>
+                                                        <div class="calendar__cell">4</div>
+                                                        <div class="calendar__cell">5</div>
+                                                        <div class="calendar__cell">6</div>
+                                                        <div class="calendar__cell">7</div>
+                                                        <div class="calendar__cell">8</div>
+                                                        <div class="calendar__cell">9</div>
+                                                        <div class="calendar__cell">10</div>
+                                                        <div class="calendar__cell">11</div>
+                                                        <div class="calendar__cell">12</div>
+                                                        <div class="calendar__cell">13</div>
+                                                        <div class="calendar__cell">14</div>
+                                                        <div class="calendar__cell">15</div>
+                                                        <div class="calendar__cell">16</div>
+                                                        <div class="calendar__cell">17</div>
+                                                        <div class="calendar__cell calendar__cell_active">18</div>
+                                                        <div class="calendar__cell calendar__cell_interval">19</div>
+                                                        <div class="calendar__cell calendar__cell_interval">20</div>
+                                                        <div class="calendar__cell calendar__cell_interval">21</div>
+                                                        <div class="calendar__cell calendar__cell_interval">22</div>
+                                                        <div class="calendar__cell calendar__cell_active">23</div>
+                                                        <div class="calendar__cell">24</div>
+                                                        <div class="calendar__cell">25</div>
+                                                        <div class="calendar__cell">26</div>
+                                                        <div class="calendar__cell">27</div>
+                                                        <div class="calendar__cell">28</div>
+                                                        <div class="calendar__cell">29</div>
+                                                        <div class="calendar__cell">30</div>
+                                                        <div class="calendar__cell">31</div>
+                                                        <div class="calendar__cell"></div>
+                                                        <div class="calendar__cell"></div>
+                                                        <div class="calendar__cell"></div>
+                                                        <div class="calendar__cell"></div>
+                                                        <div class="calendar__cell"></div>
+                                                        <div class="calendar__cell"></div>
+                                                        <div class="calendar__cell"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cards__body">
                                             <h3 class="cards__title">Calendar</h3>
-                                            <p class="cards__category">Molecular</p>
+                                            <p class="cards__category">Molecule</p>
+                                        </div>
+                                    </a>
+                                    <a class="cards__card">
+                                        <div class="cards__component">
+                                            <div class="skeleton">
+                                                <div class="skeleton__top">
+                                                    <div class="skeleton__logo"></div>
+                                                    <div class="skeleton__description">
+                                                        <div class="skeleton__line skeleton__line_s"></div>
+                                                        <div class="skeleton__line skeleton__line_m"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="skeleton__bottom">
+                                                    <div class="skeleton__line"></div>
+                                                    <div class="skeleton__line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Skeleton</h3>
+                                            <p class="cards__category">Molecule</p>
+                                        </div>
+                                    </a>
+                                    <a class="cards__card">
+                                        <div class="cards__component">
+                                            <div class="cards__flex">
+                                                <div class="text-field">
+                                                    <label class="text-field__label" for="label">Label</label>
+                                                    <div class="text-field__control">
+                                                        <input class="text-field__input" id="label" type="text" placeholder="Placeholder">
+                                                        <span class="text-field__icon"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="text-field">
+                                                    <label class="text-field__label" for="success">Success</label>
+                                                    <div class="text-field__control text-field__control_success">
+                                                        <input class="text-field__input" id="success" type="text" placeholder="Success">
+                                                        <span class="text-field__icon"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="text-field">
+                                                    <label class="text-field__label" for="error">Error</label>
+                                                    <div class="text-field__control text-field__control_error">
+                                                        <input class="text-field__input" id="error" type="text" placeholder="Error">
+                                                        <span class="text-field__icon"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="text-field">
+                                                    <label class="text-field__label" for="disabled">Disabled</label>
+                                                    <div class="text-field__control text-field__control_error">
+                                                        <input class="text-field__input" id="disabled" type="text" placeholder="Disabled" disabled>
+                                                        <span class="text-field__icon"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Input</h3>
+                                            <p class="cards__category">Molecule</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__content tabs__content_organisms">
+                        <div class="container">
+                            <div class="tabs__inner">
+                                <div class="tabs__cards cards">
+                                    <a class="cards__card">
+                                        <div class="cards__component">
+                                            <button class="button button_primary" type="button" id="modal-open">Open modal</button>
+                                        </div>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Modal</h3>
+                                            <p class="cards__category">Organism</p>
+                                        </div>
+                                    </a>
+                                    <a class="cards__card">
+                                        <div class="cards__component">
+                                            <div class="histogram">
+                                                <div class="histogram__header">
+                                                    <div class="histogram__information">
+                                                        <h2 class="histogram__title">Total orders</h2>
+                                                        <div class="histogram__total">50254</div>
+                                                    </div>
+                                                    <span class="histogram__link">View all</span>
+                                                </div>
+                                                <div class="histogram__chart">
+                                                    <div class="histogram__column histogram__column_s"></div>
+                                                    <div class="histogram__column histogram__column_m"></div>
+                                                    <div class="histogram__column histogram__column_l"></div>
+                                                    <div class="histogram__column histogram__column_s"></div>
+                                                    <div class="histogram__column histogram__column_s"></div>
+                                                    <div class="histogram__column histogram__column_l"></div>
+                                                    <div class="histogram__column histogram__column_s"></div>
+                                                    <div class="histogram__column histogram__column_m"></div>
+                                                    <div class="histogram__column histogram__column_l"></div>
+                                                    <div class="histogram__column histogram__column_s"></div>
+                                                    <div class="histogram__column histogram__column_s"></div>
+                                                    <div class="histogram__column histogram__column_l"></div>
+                                                    <div class="histogram__column histogram__column_s"></div>
+                                                    <div class="histogram__column histogram__column_m"></div>
+                                                    <div class="histogram__column histogram__column_l"></div>
+                                                    <div class="histogram__column histogram__column_s"></div>
+                                                    <div class="histogram__column histogram__column_s"></div>
+                                                    <div class="histogram__column histogram__column_l"></div>
+                                                    <div class="histogram__column histogram__column_s"></div>
+                                                    <div class="histogram__column histogram__column_m"></div>
+                                                    <div class="histogram__column histogram__column_l"></div>
+                                                    <div class="histogram__column histogram__column_s"></div>
+                                                    <div class="histogram__column histogram__column_s"></div>
+                                                    <div class="histogram__column histogram__column_l"></div>
+                                                    <div class="histogram__column histogram__column_s"></div>
+                                                    <div class="histogram__column histogram__column_m"></div>
+                                                    <div class="histogram__column histogram__column_l"></div>
+                                                    <div class="histogram__column histogram__column_s"></div>
+                                                    <div class="histogram__column histogram__column_s"></div>
+                                                    <div class="histogram__column histogram__column_l"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Histogram</h3>
+                                            <p class="cards__category">Organism</p>
+                                        </div>
+                                    </a>
+                                    <a class="cards__card">
+                                        <div class="cards__component">
+                                            <div class="accordion">
+                                                <details class="accordion__item">
+                                                    <summary class="accordion__summary">
+                                                        <span class="accotdion__title">Accordion item 1</span>
+                                                        <svg class="accordion__logo" viewBox="0 0 24 24">
+                                                            <use xlink:href="../../assets/images/icons.svg#arrow"></use>
+                                                        </svg>
+                                                    </summary>
+                                                </details>
+                                                <details class="accordion__item">
+                                                    <summary class="accordion__summary">
+                                                        <span class="accotdion__title">Accordion item 2</span>
+                                                        <svg class="accordion__logo" viewBox="0 0 24 24">
+                                                            <use xlink:href="../../assets/images/icons.svg#arrow"></use>
+                                                        </svg>
+                                                    </summary>  
+                                                </details>
+                                            </div>
+                                        </div>
+                                        <div class="cards__body">
+                                            <h3 class="cards__title">Accordion</h3>
+                                            <p class="cards__category">Organism</p>
                                         </div>
                                     </a>
                                 </div>
@@ -465,6 +709,7 @@
     </div>
 
     <script defer src="10-lection8/01-theme-changer/theme-changer.js"></script>
+    <script src="assets/js/preload.js"></script>
     <script src="05-lection3/02-modal/index.js"></script> 
     <script src="assets/js/toggle.js"></script>
     <script src="assets/js/main.js"></script>

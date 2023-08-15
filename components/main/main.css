@@ -6,5 +6,5 @@
 
 .main_component {
     padding: 0;
-    background-color: var(--grey-5);
+    background-color: var(--background-component-color);
 }

@@ -12,7 +12,7 @@
 }
 
 .header_component {
-    background-color: var(--grey-5);
+    background-color: var(--background-color);
 }
 
 .header__inner {
@@ -84,6 +84,11 @@
     cursor: pointer;
 }
 
+.header__mobile-toggle_component {
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
 .header__mobile-toggle::before {
     display: block;
     width: 32px;
@@ -124,7 +129,7 @@
     z-index: 100;
 
     width: 100vw;
-    height: 100vh;
+    height: auto;
 
     background-color: rgba(196, 196, 196, 0.8);
 
@@ -180,7 +185,7 @@
 }
 
 .header__mobile-link:hover {
-    color: var(--text-fifth-hover-color);
+    color: var(--text-hover-color);
 }
 
 .header__mobile-link_active {

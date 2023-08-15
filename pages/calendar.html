@@ -9,49 +9,55 @@
     <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
 </head>
 
-<body>
+<body class="preload">
     <div class="page page_component">
         <header class="page__header header header_component">
             <div class="container">
                 <div class="header__inner">
                     <div class="header__mobile">
-                        <div class="header__mobile-toggle" id="mobile-toggle"></div>
+                        <div class="header__mobile-toggle header__mobile-toggle_component" id="mobile-toggle"></div>
                         <div class="header__mobile-menu" id="mobile-menu">
                             <div class="header__mobile-inner">
                                 <div class="header__mobile-switcher">
-                                    <span>Dark mode</span>
+                                    <span class="header__mobile-text">Dark mode</span>
                                     <label class="toggler">
                                         <input class="toggler__input" type="checkbox">
-                                        <div class="toggler__state">
-                                            <div class="toggler__control"></div>
-                                        </div>
+                                        <span class="toggler__control"></span>
                                     </label>
                                 </div>
                                 <div class="header__mobile-category">
-                                    <h3 class="header__mobile-title">Elements</h3>
+                                    <h3 class="header__mobile-title">Menu</h3>
                                     <ul class="header__mobile-items">
-                                        <li class="header__mobile-items"><a class="header__mobile-link"
-                                                href="">Avatar</a></li>
-                                        <li class="header__mobile-items"><a class="header__mobile-link" href="">Custom
-                                                form elements</a></li>
-                                        <li class="header__mobile-items"><a class="header__mobile-link"
-                                                href="">Button</a></li>
-                                        <li class="header__mobile-items"><a class="header__mobile-link"
-                                                href="">Avatar</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../index.html">Components</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../index.html">About</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../index.html">Contact</a></li>
                                     </ul>
                                 </div>
                                 <div class="header__mobile-category">
-                                    <h3 class="header__mobile-title">Containers</h3>
+                                    <h3 class="header__mobile-title">Atoms</h3>
                                     <ul class="header__mobile-items">
-                                        <li class="header__mobile-items"><a
-                                                class="header__mobile-link header__mobile-link_active"
-                                                href="">Avatar</a></li>
-                                        <li class="header__mobile-items"><a class="header__mobile-link" href="">Custom
-                                                form elements</a></li>
-                                        <li class="header__mobile-items"><a class="header__mobile-link"
-                                                href="">Button</a></li>
-                                        <li class="header__mobile-items"><a class="header__mobile-link"
-                                                href="">Avatar</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Avatar</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Tooltip</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Radio</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Toggler</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Checkbox</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Button</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header__mobile-category">
+                                    <h3 class="header__mobile-title">Molecules</h3>
+                                    <ul class="header__mobile-items">
+                                        <li class="header__mobile-items"><a class="header__mobile-link header__mobile-link_active" href="../pages/calendar.html">Calendar</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Skeleton</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Input</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header__mobile-category">
+                                    <h3 class="header__mobile-title">Organisms</h3>
+                                    <ul class="header__mobile-items">
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Modal</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Histogram</a></li>
+                                        <li class="header__mobile-items"><a class="header__mobile-link" href="../pages/calendar.html">Accordion</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -59,19 +65,9 @@
                     </div>
 
                     <a class="header__logo" href="../index.html">
-                        <svg class="header__icon" width="110" height="32" viewBox="0 0 110 32" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_90689_201)">
-                                <rect y="1" width="30" height="30" fill="#212429" />
-                                <rect x="38" width="32" height="32" rx="16" fill="#212429" />
-                                <path d="M78 0L110 32H78V0Z" fill="#212429" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_90689_201">
-                                    <rect width="110" height="32" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
+                        <svg class="header__icon" width="110" height="32">
+                            <use href="../../assets/images/icons.svg#logo"></use>
+                         </svg>
                     </a>
 
                     <div class="header__content">
@@ -104,65 +100,53 @@
                 <div class="components">
                     <aside class="components__list sidebar">
                         <div class="sidebar__section">
-                            <h3 class="sidebar__title">Molecular</h3>
+                            <h3 class="sidebar__title">Atoms</h3>
+                            <ul class="sidebar__list">
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../pages/calendar.html">Avatar</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../pages/calendar.html">Tooltip</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../pages/calendar.html">Radio</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../pages/calendar.html">Toggler</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../pages/calendar.html">Checkbox</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a class="sidebar__link" href="../pages/calendar.html">Button</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar__section">
+                            <h3 class="sidebar__title">Molecules</h3>
                             <ul class="sidebar__list">
                                 <li class="sidebar__item">
                                     <a class="sidebar__link sidebar__link_active" href="../pages/calendar.html">Calendar</a>
                                 </li>
                                 <li class="sidebar__item">
-                                    <a class="sidebar__link" href="../pages/histogram.html">Histogram</a>
+                                    <a class="sidebar__link" href="../pages/calendar.html">Skeleton</a>
                                 </li>
                                 <li class="sidebar__item">
-                                    <a class="sidebar__link" href="../pages/avatar.html">Avatar</a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a class="sidebar__link" href="">Calendar</a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a class="sidebar__link" href="">Calendar</a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a class="sidebar__link" href="">Calendar</a>
+                                    <a class="sidebar__link" href="../pages/calendar.html">Input</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="sidebar__section">
-                            <h3 class="sidebar__title">Containers</h3>
+                            <h3 class="sidebar__title">Organisms</h3>
                             <ul class="sidebar__list">
                                 <li class="sidebar__item">
-                                    <a class="sidebar__link" href="">Calendar</a>
+                                    <a class="sidebar__link" href="../pages/calendar.html">Modal</a>
                                 </li>
                                 <li class="sidebar__item">
-                                    <a class="sidebar__link" href="">Calendar</a>
+                                    <a class="sidebar__link" href="../pages/calendar.html">Histogram</a>
                                 </li>
                                 <li class="sidebar__item">
-                                    <a class="sidebar__link" href="">Calendar</a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a class="sidebar__link" href="">Calendar</a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a class="sidebar__link" href="">Calendar</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="sidebar__section">
-                            <h3 class="sidebar__title">Templates</h3>
-                            <ul class="sidebar__list">
-                                <li class="sidebar__item">
-                                    <a class="sidebar__link" href="">Calendar</a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a class="sidebar__link" href="">Calendar</a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a class="sidebar__link" href="">Calendar</a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a class="sidebar__link" href="">Calendar</a>
-                                </li>
-                                <li class="sidebar__item">
-                                    <a class="sidebar__link" href="">Calendar</a>
+                                    <a class="sidebar__link" href="../pages/calendar.html">Accordion</a>
                                 </li>
                             </ul>
                         </div>
@@ -265,6 +249,9 @@
         </footer>
     </div>
 
+    <script defer src="../../10-lection8/01-theme-changer/theme-changer.js"></script>
+    <script src="../assets/js/preload.js"></script>
+    <script src="../assets/js/toggle.js"></script>
     <script src="../assets/js/main.js"></script>
 </body>
 
