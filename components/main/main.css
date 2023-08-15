@@ -1,11 +1,10 @@
 .main {
     padding-top: 32px;
-    padding-bottom: 32px;
 
-    background-color: var(--white);
+    background-color: var(--background-color);
 }
 
 .main_component {
     padding: 0;
-    background-color: var(--grey-5);
+    background-color: var(--background-component-color);
 }

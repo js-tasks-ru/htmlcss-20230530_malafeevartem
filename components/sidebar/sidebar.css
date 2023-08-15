@@ -24,7 +24,7 @@
     font-size: 20px;
     line-height: 26px;
     font-weight: 400;
-    color: var(--black);
+    color: var(--h3-color);
 }
 
 .sidebar__item {
@@ -34,7 +34,7 @@
 .sidebar__link {
     font-size: 14px;
     line-height: 22px;
-    color: var(--black);
+    color: var(--text-second-color);
 
     text-decoration: none;
     outline: none;
@@ -45,5 +45,5 @@
 }
 
 .sidebar__link:is(:focus, :hover) {
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--text-hover-color);
 }
